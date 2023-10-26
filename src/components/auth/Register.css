@@ -1,0 +1,128 @@
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  form.form-register {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    background-color: #f8f8f8;
+    height: 600px;
+
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .register-form {
+    margin-bottom: 15px;
+ 
+  }
+  /* Custom styles for the toast message */
+.custom-toast-success {
+    background-color: #4caf50; /* Green background for success */
+    color: #fff; /* White text color */
+    font-size: 16px;
+    /* Add more styles as needed */
+  }
+  
+  /* Custom styles for the toast message body */
+  .custom-toast-body-success {
+    font-weight: bold;
+    /* Add more styles as needed */
+  }
+  
+  .register-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .register-form input {
+   width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .submit-form button {
+    background-color: #9e14d8;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: .7rem 3rem;
+    cursor: pointer;
+  }
+  
+  .already {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  
+  .already a {
+    text-decoration: none;
+    color: #007BFF;
+  }
+  
+  /* Custom styles for the toast message */
+.custom-toast-success {
+    background-color: #4caf50; /* Green background for success */
+    color: #fff; /* White text color */
+    font-size: 16px;
+    padding: 16px; /* Add padding for better appearance */
+    border-radius: 4px; /* Add rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    max-width: 300px; /* Limit the toast width */
+  }
+  
+  /* Custom styles for the toast message body */
+  .custom-toast-body-success {
+    font-weight: bold;
+    /* Add more styles as needed */
+  }
+  
+  /* Custom styles for the error toast message */
+.custom-toast-error {
+    background-color: #f443368c; /* Red background for error */
+    color: #fff; /* White text color */
+    font-size: 16px;
+    padding: 16px; /* Add padding for better appearance */
+    border-radius: 4px; /* Add rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    max-width: 300px; /* Limit the toast width */
+  }
+  
+  /* Custom styles for the error toast message body */
+  .custom-toast-body-error {
+    font-weight: bold;
+    /* Add more styles as needed */
+  }
+/* Custom styles for the toast icons (white color) */
+.custom-toast-error .Toastify__toast-body .Toastify__icon {
+    color: #fff!important; /* White color for the icons */
+  }  
+
+  @media screen and (max-width: 368px) and (min-width: 268px) {
+ 
+  }
+  @media screen and (max-width: 768px){
+ 
+    .register-form input {
+      width: 100%;
+      
+    }
+    
+    form.form-register {
+    
+      width: 241px;
+      height: 100%;
+      margin-bottom: 25px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+  }

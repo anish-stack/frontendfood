@@ -1,0 +1,143 @@
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #6e48aa;
+    color: white;
+    position: sticky;
+  top: 0;
+  z-index: 100;
+  }
+  .sticky{
+position: sticky;
+  }
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .logo-text{
+    color: aliceblue;
+  }
+  .navbar {
+    display: flex;
+    transition: left 0.4s;
+  }
+  
+  .navbar-list {
+    list-style: none;
+    padding: 0;
+    gap: 2rem;
+    display: flex;
+  }
+  
+  .navbar-list li {
+    margin-right: 1rem;
+  }
+  
+  .navbar-list a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Dropdown menu styles */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    padding: 2rem 3rem;
+    line-height: 2;
+    position: absolute;
+    background-color: #6e48aa;
+    top: 100%;
+    left: -80%;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Header icons styles */
+  .header-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-icon,
+  .login-icon,
+  .menu-icon,
+   .close-icon{
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    position: relative;
+    color: white;
+  }
+  .hide {
+    display: none;
+  }
+  .navbar-open {
+    left: 14%!important; /* You can adjust the position as needed */
+  }
+  .menu-icon{
+    display: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  .icons{
+    color: white;
+    text-decoration: none;
+  }
+  .cart-badge {
+    position: absolute;
+    top: -16px;
+    right: -16px;
+    background-color: #ff5733;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .navbar {
+    
+            position: fixed;
+            width: 100%;
+            left: 100%;
+            border-left: 2px solid rgb(255, 43, 43);
+            top: 69px;
+            line-height: 2;
+            display: flex;
+            align-items: center;
+            backdrop-filter: blur(7px);
+            /* background: black; */
+            z-index: 4;
+            height: 100%;
+            justify-content: center;
+        
+    }
+    .navbar-list{
+        flex-direction: column;
+    }
+    .navbar-list a{
+        font-size: 27px;
+        font-weight: 700;
+        
+        color: #ff5733;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+ 
+    .header-icons {
+      display: flex;
+    }
+  }
+  
